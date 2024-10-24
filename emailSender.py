@@ -71,22 +71,8 @@ if __name__ == "__main__":
     csv_file = 'emails.csv'
     
     # Email content
-    subject = "PLP Reachout"
-    body = """Hey, there August Cohort Learner! 👋
-
-I'm [Your Name] from PLP,
-Just checking in to see if you've been joining our live training sessions. We’d love to hear from you!
-
-Could you let us know if you've been attending?
-1. Yes!
-2. No, not yet.
-3. Not all sessions.
-
-Also, if you're facing any issues or challenges, feel free to share them with us. We’re here to help! 😊
-
-Looking forward to your reply!
-[Your Name]
-PLP Team"""
+    subject = "INSERT SUBJECT HERE"
+    body = "INSERT BODY HERE"
 
     # Send emails and notify after completion
     send_bulk_emails(csv_file, sender_email, sender_password, subject, body)
