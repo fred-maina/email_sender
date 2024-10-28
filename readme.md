@@ -90,7 +90,10 @@ The CSV file must have the following structure:
 
 ```
 Email,First Name,Middle Name,Last Name,Completion (%),Country,Phone Number,Gender,Academic Level,Week,Assignee,Response,Comments,Follow up date
-samuelebiloma208@gmail.com,samuel,N/A,ebiloma,62.5,Nigeria,8147826008,male,UnderGraduate,Week 5,,,,,
+john.doe@example.com,John,N/A,Doe,75.0,USA,+1234567890,male,UnderGraduate,Week 1,,,,,
+jane.smith@example.com,Jane,N/A,Smith,85.5,UK,+0987654321,female,PostGraduate,Week 2,,,,,
+sam.brown@example.com,Sam,N/A,Brown,90.0,Canada,+1122334455,male,UnderGraduate,Week 3,,,,,
+
 ```
 
 - The `Email` column should contain the email addresses of the recipients.
