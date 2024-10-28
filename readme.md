@@ -43,8 +43,8 @@ In the project directory, create a `.env` file and add the following environment
 ```
 EMAIL=your-email@gmail.com
 PASSWORD=your-email-password
-FINAL_RECIPIENT=final-recipient-email@example.com
-CONFIRMATION_RECIPIENT=confirmation-email@example.com
+INSTRUCTOR_NAME=Your Name
+INSTRUCTOR_PHONE=+254XXXXXXXXX
 ```
 
 ### Step 3: Prepare the CSV File
@@ -52,13 +52,14 @@ CONFIRMATION_RECIPIENT=confirmation-email@example.com
 Ensure that you have a CSV file named `emails.csv` in the same directory as the script. The CSV file must have the following structure:
 
 ```
-email
-recipient1@example.com
-recipient2@example.com
-recipient3@example.com
+Email,First Name,Middle Name,Last Name,Completion (%),Country,Phone Number,Gender,Academic Level,Week,Assignee,Response,Comments,Follow up date
+john.doe@example.com,John,N/A,Doe,75.0,USA,+1234567890,male,UnderGraduate,Week 1,,,,,
+jane.smith@example.com,Jane,N/A,Smith,85.5,UK,+0987654321,female,PostGraduate,Week 2,,,,,
+sam.brown@example.com,Sam,N/A,Brown,90.0,Canada,+1122334455,male,UnderGraduate,Week 3,,,,,
+
 ```
 
-Each email should be listed under the `email` column, with no other columns or extra spaces.
+Each email should be listed under the `Email` column along with the other relevant details.
 
 ### Step 4: Run the Script
 
@@ -70,8 +71,8 @@ python emailSender.py
 
 The script will:
 
-1. Send emails to all recipients listed in the CSV file.
-2. Remove the successfully sent email addresses from the CSV.
+1. Send emails to all recipients listed in the `emails.csv` file.
+2. Remove successfully sent email addresses from the CSV, ensuring that they are no longer part of the list for future sends.
 3. Send a final confirmation email to the administrator.
 
 ## Sample `.env` File
@@ -79,8 +80,8 @@ The script will:
 ```
 EMAIL=your-email@gmail.com
 PASSWORD=your-email-password
-FINAL_RECIPIENT=final-recipient-email@example.com
-CONFIRMATION_RECIPIENT=confirmation-email@example.com
+INSTRUCTOR_NAME=Your Name
+INSTRUCTOR_PHONE=+254XXXXXXXXX
 ```
 
 ## Sample `emails.csv` File Format
@@ -88,16 +89,15 @@ CONFIRMATION_RECIPIENT=confirmation-email@example.com
 The CSV file must have the following structure:
 
 ```
-email
-recipient1@example.com
-recipient2@example.com
-recipient3@example.com
+Email,First Name,Middle Name,Last Name,Completion (%),Country,Phone Number,Gender,Academic Level,Week,Assignee,Response,Comments,Follow up date
+samuelebiloma208@gmail.com,samuel,N/A,ebiloma,62.5,Nigeria,8147826008,male,UnderGraduate,Week 5,,,,,
 ```
 
-- The `email` column should contain the email addresses of the recipients.
+- The `Email` column should contain the email addresses of the recipients.
 - There should be no other columns or extraneous data.
 
 ## Notes
 
 - Make sure you have a stable internet connection for sending emails.
 - If using Gmail, you need to enable "less secure apps" or generate an "App Password" for the script to work properly.
+- Successfully sent emails will be deleted from the `emails.csv` file to keep the list updated.
