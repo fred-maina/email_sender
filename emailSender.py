@@ -38,7 +38,7 @@ def create_message(first_name, week_number, instructor_name, instructor_phone):
 
 I hope you're doing well! We've noticed you're currently at {week_number}, and we just wanted to check in. Are you facing any challenges that are holding you back from moving forward? If so, no worries—we're here to support you every step of the way.
 
-To help you stay on track, we'd love to have you join our WhatsApp group where you can connect with other learners: https://docs.google.com/forms/d/e/1FAIpQLScgFM4jR1sI-OD2kH-JsNPOZtOE2-7hVsgILF7alHACSJFhCw/viewform?pli=1. And if you prefer, you can also reach out to me directly on WhatsApp at {instructor_phone}. 
+To help you stay on track, we'd love to have you join our WhatsApp group where you can connect with other learners: https://chat.whatsapp.com/H7K9JOKwBAoJed1qQrl0P1. And if you prefer, you can also reach out to me directly on WhatsApp at {instructor_phone}. 
 
 Looking forward to helping you succeed!
 
