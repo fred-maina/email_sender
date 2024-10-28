@@ -38,8 +38,7 @@ def create_message(first_name, week_number, instructor_name, instructor_phone):
 
 I hope you're doing well! We've noticed you're currently at {week_number}, and we just wanted to check in. Are you facing any challenges that are holding you back from moving forward? If so, no worries—we're here to support you every step of the way.
 
-To help you stay on track, we'd love to have you join our WhatsApp group where you can connect with other learners: 
-https://chat.whatsapp.com/H7K9JOKwBAoJed1qQrl0P1. And if you prefer, you can also reach out to me directly on WhatsApp at {instructor_phone}. 
+To help you stay on track, we'd love to have you join our WhatsApp group where you can connect with other learners: https://docs.google.com/forms/d/e/1FAIpQLScgFM4jR1sI-OD2kH-JsNPOZtOE2-7hVsgILF7alHACSJFhCw/viewform?pli=1. And if you prefer, you can also reach out to me directly on WhatsApp at {instructor_phone}. 
 
 Looking forward to helping you succeed!
 
@@ -76,23 +75,6 @@ if __name__ == "__main__":
     
     csv_file = 'emails.csv'
     
-    # Email content
     subject = "PLP Reachout"
-    body = """Hey, there August Cohort Learner! 👋
-
-I'm Fredrick Maina from PLP,
-Just checking in to see if you've been joining our live training sessions. We’d love to hear from you!
-
-Could you let us know if you've been attending?
-1. Yes!
-2. No, not yet.
-3. Not all sessions.
-
-Also, if you're facing any issues or challenges, feel free to share them with us. We’re here to help! 😊
-
-Looking forward to your reply!
-Fredrick Maina
-PLP Team"""
-
-    # Send emails and notify after completion
-    send_bulk_emails(csv_file, sender_email, sender_password, subject, body)
+    
+    send_bulk_emails(csv_file, sender_email, sender_password, subject)
